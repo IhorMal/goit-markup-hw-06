@@ -65,9 +65,78 @@
             <div class="modal">
               <button class="modal-btn btn" type="button" data-modal-close>
                 <svg class="modal-btn-icon" width="18" height="18">
-                  <use href="./images/symbol-defs.svg#modal-icon"></use>
+                  <use href="./images/icon.svg#modal-icon"></use>
                 </svg>
               </button>
+
+              <form class="modal-form">
+                <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
+                <div class="modal-form-field">
+                  <label class="modal-form-caption" for="name">Имя</label>
+                  <input class="modal-form-input input-border" type="text" name="name" id="name" />
+                  <svg class="modal-form-icon" width="12" height="12">
+                    <use href="./images/icon.svg#icon-person"></use>
+                  </svg>
+                </div>
+                <div class="modal-form-field">
+                  <label class="modal-form-caption" for="tel">Телефон</label>
+                  <input
+                    class="modal-form-input input-border"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    required
+                  />
+
+                  <svg class="modal-form-icon" width="13" height="13">
+                    <use href="./images/icon.svg#icon-tel-form"></use>
+                  </svg>
+                </div>
+                <div class="modal-form-field">
+                  <label class="modal-form-caption" for="email">Почта</label>
+                  <input
+                    class="modal-form-input input-border"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                  />
+
+                  <svg class="modal-form-icon" width="15" height="12">
+                    <use href="./images/icon.svg#icon-mail-form"></use>
+                  </svg>
+                </div>
+                <div class="modal-form-field">
+                  <label class="modal-form-caption" for="comment">Комментарий</label>
+                  <textarea
+                    class="comment input-border input-last"
+                    name="comment"
+                    id="comment"
+                    rows="10"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+                <div class="modal-form-field field-last">
+                  <label class="modal-form-text" for="agree-terms">
+                    <input
+                      class="modal-form-check visually-hidden"
+                      type="checkbox"
+                      name="agree-terms"
+                      id="agree-terms"
+                      required
+                    />
+                    <span class="form-conteinet-icon">
+                      <svg class="modal-form-icon-confirmation" width="12" height="12">
+                        <use href="./images/icon.svg#icon-confirmation"></use>
+                      </svg>
+                    </span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="modal-form-link" href="">Условия договора</a>
+                  </label>
+                </div>
+
+                <button class="modal-form-button btn" type="submit">Отправить</button>
+              </form>
             </div>
           </div>
         </div>
@@ -411,6 +480,27 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form">
+          <b class="footer-form-title">Подпишитесь на рассылку</b>
+
+          <div class="footer-form-field">
+            <input
+              class="footer-form-email"
+              type="email"
+              name="subscription-email"
+              placeholder="E-mail"
+            />
+            <button class="footer-form-button btn" type="submit">
+              Подписаться
+              <span>
+                <svg class="form-button-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
